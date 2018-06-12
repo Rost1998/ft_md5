@@ -1,0 +1,18 @@
+commands:
+			md5 - md5 hash
+			sha256 - sha (256 bits) hash
+
+options:
+			'something' - read this file
+			-q - quiet mod
+			-p - read from stdin, write to stdout input and hash
+			-s 'arg' - write to stdout hash of string 'arg'
+			-r - reverse output
+
+example:
+			./ft_ssl md5 -s "example" -q -r -s "example2"
+
+			output:
+				> MD5 (example) 1a79a4d60de6718e8e5b326e338ae533
+				> 66b375b08fc869632935c9e6a9c7f8da MD5 (example2)
+
